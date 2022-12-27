@@ -28,6 +28,7 @@ double SimpleMonteCarlo2(const PayOff& thePayOff
     
     double mean = runningSum / NumberOfPaths;
     mean *= std::exp(-r*Expiry);
+
     return mean;
 
 };
